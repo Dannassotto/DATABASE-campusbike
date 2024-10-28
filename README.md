@@ -156,7 +156,7 @@ ALTER TABLE ventas
 ADD idbicicleta_fk int (11),
 ADD CONSTRAINT FK_VentasBicicleta_Id FOREIGN KEY (idbicicleta_fk ) REFERENCES bicicletas (id);
 
-
+```
 # Agregar Información 
 
 ## Insertar información
@@ -237,7 +237,7 @@ INSERT INTO productos (nombre, tipo_documento, precio, idstock_fk, idbicicleta_f
 ('Bicicleta Trek', 'Factura', 1000.00, 1, 3, NULL), 
 ('Llanta Giant', 'Factura', 75.00, 2, NULL, 1),      
 ('Sillín Specialized', 'Factura', 100.00, 3, NULL, 2); 
-
+```
 ## Consultas
 ```sql
 SELECT b.marca AS Marca, b.modelo AS Modelo, s.nombre AS Sucursal, st.cantidad AS Stock_Disponible
