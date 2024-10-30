@@ -264,9 +264,9 @@ GROUP BY b.id
 ORDER BY Total_Ventas DESC
 LIMIT 1;
 
-UPDATE clientes SET idciudad_fk = 1 WHERE id = 1;  -- Juan Pérez -> Medellín
-UPDATE clientes SET idciudad_fk = 2 WHERE id = 2;  -- Ana López -> Monterrey
-UPDATE clientes SET idciudad_fk = 3 WHERE id = 3;  -- Carlos García -> Barcelona
+UPDATE clientes SET idciudad_fk = 1 WHERE id = 1;  
+UPDATE clientes SET idciudad_fk = 2 WHERE id = 2;  
+UPDATE clientes SET idciudad_fk = 3 WHERE id = 3;  
 
 SELECT 
     c.nombre AS cliente, 
